@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 375px) {
+  h1 {
+    font-size: 1.5rem;
+    padding: 20px 5%;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .wrapper {
+    width: 90%;
+    margin: 0 5%;
+    justify-content: space-between;
+  }
+
+  .recent-score {
+    width: 55%;
+  }
+
+  .recent-score-header {
+    justify-content: space-between;
+  }
+
+  .ranking-list {
+    border: 2px solid black;
+    margin-top: 10px;
+  }
+
+  .ranking-list li {
+    padding: 2px 3%;
+  }
+
+  .ranking-list li:nth-child(even) {
+    background-color: gray;
+  }
+
+  .add-your-score {
+    width: 35%;
+  }
+
+  .add-score-form {
+    gap: 5px;
+  }
+
+  .add-score-form button {
+    width: 50%;
+    margin-left: 50%;
+  }
+}
