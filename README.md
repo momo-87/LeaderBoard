@@ -70,8 +70,7 @@
 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-> Coming soon
-<!-- >[Live Demo](https://momo-87.github.io/) -->
+>[Live Demo](https://momo-87.github.io/LeaderBoard/)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -104,7 +103,7 @@
 > Coming soon
 
 ### Deployment
-> Coming soon
+> Published
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
