@@ -54,7 +54,6 @@ export const errorMsg = () => {
   const inputs = document.querySelectorAll('input');
   inputs.forEach((element) => {
     if (!element.value) {
-      // const form = document.querySelector('.add-score-form');
       const p = document.createElement('p');
       p.textContent = 'Required field';
       p.style.fontSize = '0.8rem';
