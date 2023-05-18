@@ -18,7 +18,7 @@ ul {
   flex-direction: column;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 320px) {
   h1 {
     font-size: 1.5rem;
     padding: 20px 5%;
@@ -42,16 +42,16 @@ ul {
     justify-content: space-between;
   }
 
-  .ranking-list {
+  .ranking-list-box {
     border: 2px solid black;
     margin-top: 10px;
   }
 
-  .ranking-list li {
+  .ranking-list-box li {
     padding: 2px 3%;
   }
 
-  .ranking-list li:nth-child(even) {
+  .ranking-list-box li:nth-child(even) {
     background-color: gray;
   }
 
