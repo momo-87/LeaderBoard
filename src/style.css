@@ -76,6 +76,11 @@ ul {
 
   .add-score-form input {
     height: 25px;
+    padding-left: 1.5%;
+  }
+
+  .add-score-form input:focus {
+    outline-color: #d11eff;
   }
 
   .add-score-form button {
