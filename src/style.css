@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  background-color: #3700fe;
+}
+
 ul {
   list-style: none;
 }
@@ -19,18 +23,20 @@ ul {
 }
 
 @media only screen and (min-width: 320px) {
-  h1 {
-    font-size: 1.5rem;
-    padding: 20px 5%;
+  h1 img {
+    width: 60%;
+    margin-top: 30px;
+    margin-left: 4%;
   }
 
   h2 {
     font-size: 1rem;
+    color: #6bfffd;
   }
 
   .wrapper {
     width: 90%;
-    margin: 0 5%;
+    margin: 15px 5%;
     justify-content: space-between;
   }
 
@@ -43,7 +49,7 @@ ul {
   }
 
   .ranking-list-box {
-    border: 2px solid black;
+    border: 2px solid #6bfffd;
     margin-top: 10px;
   }
 
@@ -52,7 +58,12 @@ ul {
   }
 
   .ranking-list-box li:nth-child(even) {
-    background-color: gray;
+    background-color: #6bfffd;
+    color: #333d25;
+  }
+
+  .ranking-list-box li:nth-child(odd) {
+    color: #fffff8;
   }
 
   .add-your-score {
@@ -63,8 +74,38 @@ ul {
     gap: 5px;
   }
 
+  .add-score-form input {
+    height: 25px;
+  }
+
   .add-score-form button {
     width: 50%;
     margin-left: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h1 img {
+    width: 50%;
+  }
+
+  .add-score-form button {
+    width: 20%;
+    margin-left: 80%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  h1 img {
+    width: 40%;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .wrapper {
+    width: 70%;
+    margin-top: 15px;
   }
 }
