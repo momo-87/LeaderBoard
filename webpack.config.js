@@ -1,4 +1,5 @@
 const path = require('path');
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -22,6 +23,17 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.html$/i,
+        use: 'html-loader',
+      },
+      {
+        test: /\.(png|jpg|gif|svg|eot|ttf|woff)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/[name]-[hash][ext]',
+        },
       },
     ],
   },

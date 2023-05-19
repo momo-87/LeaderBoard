@@ -14,7 +14,7 @@ export const addNewGame = async (gameName) => {
 
 // Add score function
 export const addScore = async (userName, userScore) => {
-  const request = new Request('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/:CX9B0AJfTfaG80q9chXf/scores/');
+  const request = new Request('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/:6rlT9Ashxb5Q69gbAfIQ/scores/');
   await fetch(request, {
     method: 'POST',
     body: JSON.stringify({
@@ -29,7 +29,7 @@ export const addScore = async (userName, userScore) => {
 
 // Get data from API and populate HTML function
 export const populateScores = async () => {
-  const request = new Request('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/:CX9B0AJfTfaG80q9chXf/scores/');
+  const request = new Request('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/:6rlT9Ashxb5Q69gbAfIQ/scores/');
   const response = await fetch(request);
   const data = await response.json();
   const rankingList = document.querySelector('.ranking-list');
@@ -57,7 +57,7 @@ export const errorMsg = () => {
       const p = document.createElement('p');
       p.textContent = 'Required field';
       p.style.fontSize = '0.8rem';
-      p.style.color = 'red';
+      p.style.color = '#FFB6E1';
       element.after(p); // insert p tag after input element
     }
   });
